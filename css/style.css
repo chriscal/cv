@@ -146,12 +146,14 @@ body {
 /* Carousel Section */
 .carousel-container {
     position: relative;
-    width: 100%; /* Full width of the page */
-    min-height: 500px; /* Minimum height, adjusts based on content */
+    width: calc(100% - 30px); /* Full width minus 15px padding on each side */
+    max-width: 1000px;
+    height: 500px;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 40px 20px; /* Add padding for better spacing */
+    margin: 40px auto;
+    padding: 20px;
 }
 
 .carousel {
@@ -226,12 +228,16 @@ body {
     transform: translateY(-50%);
     background-color: rgba(87, 183, 242, 0.5);
     color: white;
-    width: auto;
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height to match width for perfect circle */
     border: none;
-    padding: 10px;
+    padding: 0; /* Remove padding */
     cursor: pointer;
     font-size: 18px;
     border-radius: 50%;
+    display: flex; /* Add flex display */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
 }
 
 .prev {
