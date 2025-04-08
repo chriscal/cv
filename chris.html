@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Preload the background image -->
+    <link rel="preload" as="image" href="img/container01.jpg">
+    <!-- Import fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lora:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero" id="hero">
+        <div class="hero-content">
+            <h1 id="text04">CHRIS CALLANDER</h1>
+            <p style="font-style: italic !important;">I'm a Director of Product Management, driving strategic alignment with business goals to deliver measurable impact</p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+        <!-- Left Column: Title & Intro Text -->
+        <div class="skills-intro">
+            <p class="overline">MY SKILLS</p>
+            <h2>Building products for humans</h2>
+            <p class="intro-text">
+                With my startup background, I bring a lean mindset for building products fast.
+                My psychology background uniquely connects me to building products that
+                understand and enhance user experiences.
+            </p>
+        </div>
+
+        <!-- Right Columns: Four Skill Cards in a 2×2 grid -->
+        <div class="skills-cards">
+            <!-- Skill Card 1 -->
+            <div class="skill-card">
+                <img src="img/stratelead.png" alt="Product Strategy icon">
+                <h3>Strategic Leadership</h3>
+                <p>Identifying and prioritising opportunities that align with the commercial and strategic goals of the business.</p>
+            </div>
+
+            <!-- Skill Card 2 -->
+            <div class="skill-card">
+                <img src="img/design-icon.png" alt="Product Design icon">
+                <h3>Build and Lead Product Teams</h3>
+                <p>Growing, leading and inspiring product teams across product portfolios. Ensuring effective coordination between product and cross-functional teams.</p>
+            </div>
+
+            <!-- Skill Card 3 -->
+            <div class="skill-card">
+                <img src="img/market-research-icon.png" alt="Market & User Research icon">
+                <h3>Product Operations</h3>
+                <p>Tracking the product development life cycle's commercial viability, ensuring build costs are optimised so the ROI is easily realised.</p>
+            </div>
+
+            <!-- Skill Card 4 -->
+            <div class="skill-card">
+                <img src="img/analytics-icon.png" alt="Analytics & Programming icon">
+                <h3>Analytics & Programming</h3>
+                <p>Software Development and Management</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <h3>EXPERIENCE</h3>
+                <h2>Director Of Product Management</h2>
+                <h4>PERSUIT 05/2022 – Present</h4>
+                <p>
+                    PERSUIT is a legal technology platform designed to streamline and optimize the engagement of outside counsel for corporate legal teams. It helps corporate legal teams manage outside counsel as a marketplace that leverages data insights. With major clients like Meta, Walmart and HSBC, it surpassed $100 billion in proposal value by 2023. A $20 million Series A round in 2021 led by OpenView Partners drove global growth and innovation.
+                </p>
+                <ul>
+                    <li>Expanded the product function from a small team of two and one squad to a team of eight, overseeing and directing four squads.</li>
+                    <li>Developed the product vision and strategy to realise additional value propositions and expand our TAM into adjacent markets and increase product adoption.</li>
+                    <li>Communicate a comprehensive objective driven roadmap to deliver the strategic objectives.</li>
+                    <li>Personally identified a new opportunity and launched a new product line to service this. This involved pitching the concept to the board was approved and is now in development.</li>
+                    <li>Delivered Rate Review feature in Q4 2024 which is expected to account for 20% of ARR in 2024. On track through Q1.</li>
+                    <li>Surfaced the need for improved accessibility standards. Prioritised those changes which enabled us to pass compliance testing and onboarding of Microsoft, Bank of America, Wells Fargo and US Bank.</li>
+                    <li>Delivered improvements to the core platform, increasing the existing user engagement scores by 40% through H2 2023. The current retention rate stands at 90% with a target of 100% throughout 2024.</li>
+                </ul>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <h3>EXPERIENCE</h3>
+                <h2>Previous Role</h2>
+                <h4>Company Name 01/2019 – 04/2022</h4>
+                <p>Placeholder content for the second slide. Add your previous role details here.</p>
+                <ul>
+                    <li>Achievement 1</li>
+                    <li>Achievement 2</li>
+                    <li>Achievement 3</li>
+                </ul>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <h3>EXPERIENCE</h3>
+                <h2>Another Role</h2>
+                <h4>Company Name 06/2016 – 12/2018</h4>
+                <p>Placeholder content for the third slide. Add your previous role details here.</p>
+                <ul>
+                    <li>Achievement 1</li>
+                    <li>Achievement 2</li>
+                    <li>Achievement 3</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script2.js"></script>
+</body>
+</html>

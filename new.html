@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Grid</title>
+    <style>
+        body {
+            font-family: sans-serif; /* Choose your preferred font */
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+            grid-template-rows: repeat(3, auto); /* Adjust rows as needed */
+            gap: 20px; /* Spacing between grid items */
+            max-width: 960px; /* Adjust as needed */
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+        }
+
+        .item-1 {
+            grid-column: 1 / 4; /* Span across 3 columns */
+            grid-row: 1 / 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            text-align: center;
+        }
+
+        .item-2 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: #f0f8ff; /* Light blue background */
+            padding: 20px;
+            border-radius: 10px; /* Add rounded corners */
+        }
+
+        .item-3 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .item-4 {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .item-5 {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Add more styles for headings, paragraphs, etc. as needed */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item-1">
+            <h1>Building products for humans</h1>
+            <p>With my startup background, I bring a lean mindset for building products fast. My psychology background uniquely connects me to building products that understand and enhance user experiences.</p>
+        </div>
+        <div class="item-2">
+            <h2>Product Strategy</h2>
+            <p>Roadmapping, A/B Tests, Project Management</p>
+        </div>
+        <div class="item-3">
+            <h2>Product Design</h2>
+            <p>User Stories, User Flows, Wireframes, Persona Writing</p>
+        </div>
+        <div class="item-4">
+            <h2>Market & User Research</h2>
+            <p>Market Analysis, Experiment Design, Usability Testing</p>
+        </div>
+        <div class="item-5">
+            <h2>Analytics & Programming</h2>
+            <p>Software Development and Management</p>
+        </div>
+    </div>
+
+</body>
+</html>

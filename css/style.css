@@ -1,0 +1,275 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background: #f8f9fa;
+    color: #212529;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    height: 420px;
+    width: 100%;
+    background: #000; /* Fallback background color */
+    background-image: url('img/container01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 0 20%;
+    overflow: hidden;
+}
+
+/* Hide hero text until the background image has loaded */
+.hero-content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* When the background is loaded, show the text */
+.hero.bg-loaded .hero-content {
+    opacity: 1;
+}
+
+.hero h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-family: 'DM Sans', sans-serif; /* Removed 'Lora', serif */
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: #f8f9fa;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+}
+
+/* Skills Section */
+.skills-section {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    gap: 40px;
+    background-color: #f6fbff;
+    padding: 60px 20px;
+}
+
+/* Left Column (Heading & Intro) */
+.skills-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-intro .overline {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1E90FF;
+    letter-spacing: 0.1rem;
+    margin: 0 0 10px;
+}
+
+.skills-intro h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: #101011;
+}
+
+.skills-intro .intro-text {
+    font-family: 'DM Sans', sans-serif; /* Removed 'Lora', serif */
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+    max-width: 90%;
+}
+
+/* Right Column (Skill Cards: 2×2 Grid) */
+.skills-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding-right: 5%;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.skill-card img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    font-weight: 700;
+    color: #171717;
+}
+
+.skill-card p {
+    font-family: 'DM Sans', sans-serif; /* Removed 'Lora', serif */
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #555555;
+}
+
+/* Carousel Section */
+.carousel-container {
+    position: relative;
+    width: 100%; /* Full width of the page */
+    min-height: 500px; /* Minimum height, adjusts based on content */
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px; /* Add padding for better spacing */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 0 10%; /* Adjust padding for content */
+    box-sizing: border-box;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 0.1rem;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    font-family: 'DM Sans', sans-serif; /* Removed 'Lora' */
+}
+
+.slide h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #101011;
+    font-family: 'DM Sans', sans-serif; /* Removed 'Lora' */
+}
+
+.slide h4 {
+    font-size: 1rem;
+    color: #1E90FF;
+    margin: 5px 0 15px 0;
+    font-family: 'DM Sans', sans-serif; /* Removed 'Lora' */
+}
+
+.slide p {
+    font-family: 'DM Sans', sans-serif; /* Removed 'Lora', serif */
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+.slide ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.slide li {
+    font-family: 'DM Sans', sans-serif; /* Removed 'Lora' */
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(87, 183, 242, 0.5);
+    color: white;
+    width: auto;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .skills-section {
+        grid-template-columns: 1fr; /* Stacks intro & cards in one column */
+    }
+
+    .skills-cards {
+        grid-template-columns: 1fr; /* Single column for cards on small screens */
+        padding-right: 0; /* Reset padding on mobile */
+    }
+
+    .hero {
+        padding: 0 10%; /* Reduce padding on smaller screens */
+    }
+
+    .hero p {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .carousel-container {
+        padding: 20px 10px; /* Reduce padding on mobile */
+    }
+
+    .slide {
+        padding: 0 5%; /* Reduce padding inside slides on mobile */
+    }
+}

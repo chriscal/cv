@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chris Callander CV</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Correct Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+  <style>
+    /* Global Font */
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+    body {
+      font-family: 'Rubik', sans-serif;
+    }
+
+    /* Main Header */
+    h1 {
+      font-size: 2.5rem;
+      color: black;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: #1E90FF;
+      font-weight: 200;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: #1E90FF;
+      font-weight: 300;
+    }
+	h5 {
+      font-weight: 200;
+      padding-top: 20px;
+    }
+    
+    /* Section Headers (e.g., SUMMARY, EXPERIENCE) */
+    .section-header {
+      font-size: 1rem;
+      color: #666A6E;
+      font-weight: 200;
+      text-transform: uppercase;
+      margin-top: 2rem;
+      position: relative;
+      padding-bottom: 0.3rem;
+    }
+
+    .section-header::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #666A6E;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    /* Paragraph and Link Styling */
+    p {
+      font-size: 1rem;
+      font-weight: 100;
+      line-height: 1.5;
+    }
+
+	.text-muted{
+	font-size: 1rem;
+      font-weight: 100;
+      line-height: 1.5;	
+	}
+    a {
+      color: #1E90FF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Icons */
+    .contact-icons i {
+      margin-right: 0.5rem;
+      color: #1E90FF;
+    }
+
+    /* Placeholder Styling */
+    .placeholder-image {
+        width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+		overflow: hidden; /* Ensure the container contains the image */
+		clear: both; /* Clear any floating elements */
+    }
+    
+
+    /* Right Column */
+    .right-column {
+      border-left: 0px solid #ddd;
+      padding-left: 1rem;
+    }
+    
+    .experience-item .li {
+	    color: red;
+    }
+    
+
+.mytime-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-container {
+    position: relative;
+    width: 600px; /* Adjust based on your design */
+    height: 500px; /* Adjust based on your design */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Optional: Media queries for smaller screens */
+@media (max-width: 768px) {
+  .placeholder-image {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .placeholder-image {
+    max-width: 300px;
+  }
+}
+  </style>
+  
+</head>
+<body>
+  <div class="container mt-4">
+    <!-- Header -->
+    <header class="mb-4">
+      <h1>CHRIS CALLANDER</h1>
+      <h3>Director of Product</h3>
+<p class="mt-3 contact-icons" style="color: #869296;">
+  <i class="fas fa-phone" style="color: #869296; padding-left: 3px;padding-right: 12px;"></i> +61 401 244 409 
+  <i class="fas fa-envelope" style="color: #869296; padding-left: 3px;"></i> <a href="mailto:chris@madisoninteractive.com.au" style="color: #869296;padding-right: 12px;">chris@madisoninteractive.com.au</a> 
+  <i class="fab fa-linkedin" style="color: #869296; padding-left: 3px;"></i> <a href="https://linkedin.com/in/chriscallander/" target="_blank" style="color: #869296; padding-right: 12px;">linkedin.com/in/chriscallander/</a> 
+  <i class="fas fa-map-marker-alt" style="color: #869296; padding-left: 3px;padding-right: 12px;"></i> Melbourne, Australia
+</p>
+    </header>
+
+    <!-- Content -->
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-8" style="padding-right: 80px;">
+        <!-- Summary Section -->
+        <section>
+          <h2 class="section-header">Summary</h2>
+          <p>
+            I'm passionate about understanding why people do what they do and how that manifests in the products they use. 
+            Once the essential elements of a product are delivered, I empower teams to create moments of delight that provide 
+            indispensable value for customers, beyond the standard expectations. I have consistently led cross-functional teams; driving product vision, strategy, and execution from ideation to launch. 
+          </p>
+        </section>
+
+        <!-- Experience Section -->
+<section>
+  <h2 class="section-header">Experience</h2>
+  <div class="experience-item">
+    <h5>Director Of Product Management</h5>
+    <p class="text-muted"><span style="color: #1E90FF;">PERSUIT</span> 05/2022 - Present</p>
+    <p> PERSUIT is a legal technology platform designed to streamline and optimize the engagement of outside counsel for corporate legal teams. It helps corporate legal teams manage outside counsel as a  marketplace that leverages data insights. With major clients like Meta, Walmart and HSBC, it surpassed $10 billion in proposal value by 2023. A $20 million Series A round in 2021 led by OpenView Partners drove global growth and innovation.</p>
+    <ul>
+      <li>Expanded the product function from a small team of two and one squad to a team of eight, overseeing and directing four squads.</li>
+      <li>Developed the product vision and strategy to realise additional value propositions and expand our TAM into adjacent markets and increase product adoption.</li>
+      <li>Communicate a comprehensive objective driven roadmap to deliver the strategic objectives.</li>
+      <li>Personally identified a new opportunity and launched a new product line to service this. This involved pitching the concept to the board  was approved and is now in development.</li>
+      <li>Delivered Rate Review feature in Q4 2024 which is expected to account for 20% of ARR in 2024. On track through Q1.</li>
+      <li>Surfaced the need for improved accessibility standards. Prioritised those changes which enabled us to pass compliance testing and onboarding of Microsoft, Bank of America, Wells Fargo and US Bank.</li>
+      <li>Delivered improvements to the core platform, increasing the existing user engagement scores by 40% through H2 23. The current retention rate stands at 90% with a target of 100% throughout 2024.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h5>Senior Product Manager</h5>
+    <p class="text-muted"><span style="color: #1E90FF;">PERSUIT</span> 04/2021 - 05/2022</p>
+    <ul>
+      <li>Introduced Opportunity Solution Tree methodology to roadmap processes.</li>
+      <li>Led the development of the Proposal Analyzer, converting 40% of prospects.</li>
+      <li>Established discovery processes and implemented tools like Notion and Pendo.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h5>Senior Product Manager</h5>
+    <p class="text-muted"><span style="color: #1E90FF;">Estimate One</span>  08/2021 - 03/2022</p>
+    <ul>
+      <li>Ensured team initiatives aligned with leadership goals.</li>
+      <li>Managed the lifecycle of the core tender product.</li>
+      <li>Established governance for customer feedback management using Productboard.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h5>Experience Director</h5>
+    <p class="text-muted"><span style="color: #1E90FF;">Freestate</span>  10/2018 - 04/2020</p>
+    <ul>
+      <li>Utilized human-centered design for user journey mapping.</li>
+      <li>Designed and delivered the "Freestate Experience Dashboard."</li>
+      <li>Formulated UX principles for product and technology strategies.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h5><span style="font-weight:200;">Product Manager</span></h5>
+    <p class="text-muted"><span style="color: #1E90FF;">MYOB | 09/2016 - 10/2018</p>
+    <ul>
+      <li>Shifted pricing models from per-seat to value-based pricing.</li>
+      <li>Delivered the Partner Program, a tiered rewards system.</li>
+      <li>Integrated customer service and marketing teams for better product releases.</li>
+    </ul>
+  </div>
+
+  <div class="experience-item">
+    <h5>Group Account Director / Technical Director</h5>
+    <p class="text-muted"><span style="color: #1E90FF;">AndMine | 09/2014 - 12/2015</p>
+    <ul>
+      <li>Developed the go-to-market strategy for SaaS products.</li>
+      <li>Oversaw strategic and technical project recommendations.</li>
+      <li>Established resource management and performance processes.</li>
+    </ul>
+  </div>
+</section>
+
+        <!-- Education Section -->
+        <section>
+          <h2 class="section-header">Education</h2>
+          <ul>
+            <li><strong>Bachelor of Applied Science – Information Systems</strong>, Deakin University</li>
+            <li><strong>Associate Diploma of Graphic Design</strong>, Grenadi School of Graphic Design</li>
+            <li><strong>Domain Driven Design (Short Course)</strong>, Paul Rayner, Virtual Genius</li>
+            <li><strong>Mobius Loop Framework (Short Course)</strong>, Gabrielle Benefield</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-4 right-column">
+        <!-- Strengths -->
+ <section>
+  <h2 class="section-header">Strengths</h2>
+  <div class="d-flex align-items-start mb-3">
+    <img src="img/imggrpah.png" alt="Strategic Planning Icon" style="width: 70px; height: 65px; background-color: #f4f4f4; border-radius: 50%; margin-right: 15px;">
+    <div>
+      <h5 style="margin: 0; font-weight: 300;">Strategic Planning</h5>
+      <p style="margin: 0;">I have developed numerous product visions and related strategies to provide focus and executive alignment.</p>
+    </div>
+  </div>
+  <div class="d-flex align-items-start">
+    <img src="img/uximg.png" alt="User Experience Icon" style="width: 65px; height: 65px; background-color: #f4f4f4; border-radius: 50%; margin-right: 15px;">
+    <div>
+      <h5 style="margin: 0; font-weight: 300;">User Experience</h5>
+      <p style="margin: 0;">I work closely with cross-functional teams to ensure intuitive user journeys, utilizing FullStory and A/B testing.</p>
+    </div>
+  </div>
+</section>
+
+       <!-- Placeholder for My Time Graph -->
+<section>
+  <h2 class="section-header">My Time</h2>
+  <div class="placeholder-image">
+    <img src="img/mytime.png" alt="My Time Graph" class="mytime-image">
+  </div>
+</section>
+
+        <!-- Skills -->
+        <section>
+          <h2 class="section-header">Skills</h2>
+          <ul>
+            <li>Strategic Planning</li>
+            <li>Product Coaching</li>
+            <li>Data Analysis</li>
+            <li>Product Marketing</li>
+            <li>OKRs</li>
+            <li>AI Prompt Engineering</li>
+          </ul>
+        </section>
+
+        <!-- Achievements -->
+        <section>
+          <h2 class="section-header">Achievements</h2>
+          <ul>
+            <li><strong>Product Operations:</strong> Built the product management function at PERSUIT.</li>
+            <li><strong>Lecturing:</strong> Delivered accredited product management training.</li>
+            <li><strong>App Development:</strong> Developed a mobile app for knee rehabilitation.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <!-- Slide 1 (Content from the image) -->
+            <div class="slide active">
+                <h3>EXPERIENCE</h3>
+                <h2>Director Of Product Management</h2>
+                <h4>PERSUIT 05/2022 – Present</h4>
+                <p>
+                    PERSUIT is a legal technology platform designed to streamline and optimize the engagement of outside counsel for corporate legal teams. It helps corporate legal teams manage outside counsel as a marketplace that leverages data insights. With major clients like Meta, Walmart and HSBC, it surpassed $100 billion in proposal value by 2023. A $20 million Series A round in 2021 led by OpenView Partners drove global growth and innovation.
+                </p>
+                <ul>
+                    <li>Expanded the product function from a small team of two and one squad to a team of eight, overseeing and directing four squads.</li>
+                    <li>Developed the product vision and strategy to realise additional value propositions and expand our TAM into adjacent markets and increase product adoption.</li>
+                    <li>Communicate a comprehensive objective driven roadmap to deliver the strategic objectives.</li>
+                    <li>Personally identified a new opportunity and launched a new product line to service this. This involved pitching the concept to the board was approved and is now in development.</li>
+                    <li>Delivered Rate Review feature in Q4 2024 which is expected to account for 20% of ARR in 2024. On track through Q1.</li>
+                    <li>Surfaced the need for improved accessibility standards. Prioritised those changes which enabled us to pass compliance testing and onboarding of Microsoft, Bank of America, Wells Fargo and US Bank.</li>
+                    <li>Delivered improvements to the core platform, increasing the existing user engagement scores by 40% through H2 2023. The current retention rate stands at 90% with a target of 100% throughout 2024.</li>
+                </ul>
+            </div>
+            <!-- Placeholder Slide 2 -->
+            <div class="slide">
+                <h3>EXPERIENCE</h3>
+                <h2>Previous Role</h2>
+                <h4>Company Name 01/2019 – 04/2022</h4>
+                <p>Placeholder content for the second slide. Add your previous role details here.</p>
+                <ul>
+                    <li>Achievement 1</li>
+                    <li>Achievement 2</li>
+                    <li>Achievement 3</li>
+                </ul>
+            </div>
+            <!-- Placeholder Slide 3 -->
+            <div class="slide">
+                <h3>EXPERIENCE</h3>
+                <h2>Another Role</h2>
+                <h4>Company Name 06/2016 – 12/2018</h4>
+                <p>Placeholder content for the third slide. Add your previous role details here.</p>
+                <ul>
+                    <li>Achievement 1</li>
+                    <li>Achievement 2</li>
+                    <li>Achievement 3</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
